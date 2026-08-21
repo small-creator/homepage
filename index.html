@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>잠실 센트럴 프라임 공인중개사사무소 | 잠실 엘스·리센츠·트리지움·신축재건축 전문</title>
+  <meta name="description" content="서울시 송파구 잠실동 전문 프리미엄 공인중개사사무소. 잠실 엘스, 리센츠, 트리지움, 레이크팰리스, 파크리오 및 잠실래미안아이파크, 잠실주공5단지 실매물 및 실시간 시세, 부동산 뉴스 제공.">
+  <meta name="keywords" content="잠실부동산, 잠실공인중개사, 잠실엘스, 잠실리센츠, 잠실트리지움, 잠실파크리오, 잠실래미안아이파크, 잠실주공5단지, 토지거래허가구역">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="잠실 센트럴 프라임 공인중개사사무소 | 잠실 프리미엄 부동산 파트너">
+  <meta property="og:description" content="잠실 15년 전문 공인중개사의 정직한 중개와 정밀 시세 분석. 실시간 매물 상담 02-421-8949">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. BREAKING TICKER BAR -->
+  <div class="ticker-bar">
+    <div class="container">
+      <div class="ticker-inner">
+        <span class="ticker-badge">
+          <span class="pulse-dot"></span>
+          잠실 브리핑
+        </span>
+        <div class="ticker-track-wrapper">
+          <div class="ticker-track" id="tickerTrack">
+            <!-- Populated by js/app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. STICKY NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="잠실 센트럴 프라임 공인중개사 홈">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M12 3l9 4H3l9-4z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">잠실 센트럴 프라임</span>
+          <span class="brand-sub">PRIME REALTY BROKERAGE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-links">
+          <li><a href="#complexes" class="nav-link">단지별 실매물</a></li>
+          <li><a href="#news" class="nav-link">부동산 소식 & 뉴스</a></li>
+          <li><a href="#calculators" class="nav-link">중개·세무 계산기</a></li>
+          <li><a href="#contact" class="nav-link">1:1 상담 예약</a></li>
+          <li><a href="#office" class="nav-link">오시는 길</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" aria-label="테마 전환">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Direct Phone CTA -->
+        <a href="tel:02-421-8949" class="btn-header-call" onclick="handleCallClick('헤더 전화연결')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>02-421-8949</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn-menu-toggle" id="menuToggleBtn" aria-label="모바일 메뉴 열기">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="모바일 내비게이션">
+    <div class="drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">잠실 센트럴 프라임</span>
+        <span class="brand-sub">송파구 잠실동 전문 부동산</span>
+      </div>
+      <button class="modal-close-btn" id="drawerCloseBtn" aria-label="메뉴 닫기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="#complexes" class="drawer-nav-link">🏢 단지별 실매물</a></li>
+      <li><a href="#news" class="drawer-nav-link">📰 부동산 소식 & 뉴스</a></li>
+      <li><a href="#calculators" class="drawer-nav-link">🧮 중개·취득세 계산기</a></li>
+      <li><a href="#contact" class="drawer-nav-link">📋 1:1 방문상담 예약</a></li>
+      <li><a href="#office" class="drawer-nav-link">📍 오시는 길 & 약도</a></li>
+    </ul>
+    <div class="drawer-bottom-cta">
+      <a href="tel:02-421-8949" class="btn-primary" onclick="handleCallClick('모바일 드로어 전화')">
+        📞 02-421-8949 바로 전화
+      </a>
+      <a href="tel:010-8949-5500" class="btn-secondary" onclick="handleCallClick('모바일 대표 직통')">
+        📱 대표 공인중개사 직통
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- 3. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Hero Headline & CTA -->
+          <div class="hero-content">
+            <div class="hero-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>서울시 송파구 잠실동 No.1 신뢰 중개</span>
+            </div>
+            <h1 class="hero-title">
+              잠실의 <span class="highlight-text">가치와 미래</span>를 잇는<br>
+              프리미엄 부동산 파트너
+            </h1>
+            <p class="hero-desc">
+              잠실 엘스·리센츠·트리지움·레이크팰리스·파크리오부터 잠실래미안아이파크·잠실르엘·주공5단지 재건축까지. 
+              15년 잠실 전문 공인중개사가 100% 검증된 실매물과 정밀한 시세·세무 가이드를 제공합니다.
+            </p>
+            <div class="hero-cta-group">
+              <a href="tel:02-421-8949" class="btn-primary" onclick="handleCallClick('히어로 메인 전화')">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>지금 바로 전화 상담 (02-421-8949)</span>
+              </a>
+              <a href="#complexes" class="btn-secondary">
+                <span>실시간 매물 보기</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats Counters -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">15년+</span>
+                <span class="stat-label">잠실동 전담 경력</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2,850+</span>
+                <span class="stat-label">누적 안전 중개건수</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99.4%</span>
+                <span class="stat-label">고객 재의뢰 만족도</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">확인 실매물 보증</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hero Visual Card -->
+          <div class="hero-media-wrapper">
+            <div class="hero-card-main">
+              <img src="assets/images/hero.jpg" alt="잠실 한강변 랜드마크 스카이라인" loading="eager">
+              <div class="hero-overlay-badge">
+                <div class="badge-info">
+                  <h4>잠실 엘스 · 리센츠 전담팀</h4>
+                  <p>실시간 확인 매물 120+건 보유 중</p>
+                </div>
+                <a href="tel:02-421-8949" class="badge-call-btn" aria-label="바로 전화걸기" onclick="handleCallClick('히어로 오버레이 배지')">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. JAMSIL LANDMARK COMPLEXES & PROPERTIES SECTION -->
+    <section class="section" id="complexes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">FEATURED PROPERTIES</span>
+          <h2 class="section-title">잠실 대표 대단지 실시간 추천 매물</h2>
+          <p class="section-subtitle">
+            송파구 잠실동 대장주 아파트의 엄선된 로얄동·로얄층 실매물과 최신 시세를 한눈에 확인하세요.
+          </p>
+        </div>
+
+        <!-- Filter Tab Bar -->
+        <div class="filter-tab-bar" role="tablist">
+          <button class="filter-btn active" data-category="all" role="tab">전체 매물</button>
+          <button class="filter-btn" data-category="els" role="tab">잠실 엘스</button>
+          <button class="filter-btn" data-category="ricenz" role="tab">잠실 리센츠</button>
+          <button class="filter-btn" data-category="trizium" role="tab">잠실 트리지움</button>
+          <button class="filter-btn" data-category="lake" role="tab">레이크팰리스</button>
+          <button class="filter-btn" data-category="parkrio" role="tab">잠실 파크리오</button>
+          <button class="filter-btn" data-category="reconstruct" role="tab">신축·재건축</button>
+        </div>
+
+        <!-- Property Grid Container -->
+        <div class="property-grid" id="propertyGrid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. REAL ESTATE NEWS & INSIGHTS BOARD SECTION -->
+    <section class="section news-board-section" id="news">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">JAMSIL REAL ESTATE INSIGHTS</span>
+          <h2 class="section-title">부동산 소식 & 전문가 분석 뉴스룸</h2>
+          <p class="section-subtitle">
+            실거래가 동향부터 토지거래허가구역 규제, 재건축 사업 진행까지 정확한 부동산 정보를 발 빠르게 전해드립니다.
+          </p>
+        </div>
+
+        <!-- News Filter & Search Bar -->
+        <div class="news-filter-wrapper">
+          <div class="news-categories" role="tablist">
+            <button class="news-cat-btn active" data-cat="all">📌 전체 소식</button>
+            <button class="news-cat-btn" data-cat="market">📈 잠실 시세동향</button>
+            <button class="news-cat-btn" data-cat="reconstruct">🏗️ 재건축·정비사업</button>
+            <button class="news-cat-btn" data-cat="policy">📜 정책·세무·대출</button>
+            <button class="news-cat-btn" data-cat="infra">🌿 인프라·개발호재</button>
+          </div>
+          <div class="news-search-box">
+            <svg class="news-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="newsSearchInput" class="news-search-input" placeholder="키워드로 소식 검색 (예: 84㎡, 재건축, 세무)" aria-label="뉴스 검색">
+          </div>
+        </div>
+
+        <!-- News Cards Grid -->
+        <div class="news-cards-grid" id="newsCardsGrid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+
+        <!-- Newsletter Subscription Banner -->
+        <div class="newsletter-banner">
+          <div class="newsletter-info">
+            <h3>📬 잠실 부동산 주간 브리핑 무료 구독</h3>
+            <p>매주 금요일, 잠실 주요 단지 실거래가 및 급매물 소식을 이메일로 받아보세요.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterInput" class="newsletter-input" placeholder="이메일 주소를 입력하세요" required aria-label="이메일 구독">
+            <button type="submit" class="btn-newsletter">구독 신청</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SMART CALCULATORS & TOOLS SECTION -->
+    <section class="section" id="calculators">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">SMART FINANCIAL TOOLS</span>
+          <h2 class="section-title">부동산 스마트 모의 계산기</h2>
+          <p class="section-subtitle">
+            계약 전 반드시 확인해야 할 법정 중개보수와 2026년 기준 취득세를 간편하게 계산해보세요.
+          </p>
+        </div>
+
+        <div class="calc-grid">
+          <!-- Calculator 1: Brokerage Fee -->
+          <div class="calc-card">
+            <div class="calc-card-header">
+              <div class="calc-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="6" y1="12" x2="18" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>중개보수(복비) 모의 계산기</h3>
+                <p>국토교통부 법정 상한요율 기준 자동 산출</p>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label class="calc-label">거래 유형</label>
+              <div class="calc-segmented-control" id="feeTypeGroup">
+                <button type="button" class="segment-btn active" data-type="trade">매매 / 교환</button>
+                <button type="button" class="segment-btn" data-type="lease">전세 / 임대차</button>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label for="feeAmount" class="calc-label">거래 금액 (만원 단위)</label>
+              <div class="calc-input-wrapper">
+                <input type="number" id="feeAmount" class="calc-input" value="250000" step="1000">
+                <span class="calc-unit">만원</span>
+              </div>
+              <small style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; display: block;">예: 25억 = 250,000만원 입력</small>
+            </div>
+
+            <div class="calc-form-group" style="display:flex; align-items:center; gap:8px;">
+              <input type="checkbox" id="feeVat" checked style="width:18px; height:18px; accent-color: var(--primary);">
+              <label for="feeVat" style="font-size:0.88rem; font-weight:600; cursor:pointer;">부가가치세 10% 포함하여 계산</label>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="result-row">
+                <span>적용 상한 요율</span>
+                <span class="result-val" id="feeRateVal">0.7%</span>
+              </div>
+              <div class="result-row">
+                <span>중개보수 (VAT 별도)</span>
+                <span class="result-val" id="feeMaxVal">1,750만원</span>
+              </div>
+              <div class="result-row">
+                <span>부가가치세 (10%)</span>
+                <span class="result-val" id="feeVatVal">175만원</span>
+              </div>
+              <div class="result-row total">
+                <span>총 중개보수 (VAT 포함)</span>
+                <span class="result-val" id="feeTotalVal">1,925만원</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calculator 2: Acquisition Tax -->
+          <div class="calc-card">
+            <div class="calc-card-header">
+              <div class="calc-icon" style="background:var(--accent-light); color:var(--accent);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>취득세 모의 계산기 (잠실 송파구 기준)</h3>
+                <p>조정대상지역 주택수별 취득세율 반영</p>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label class="calc-label">보유 주택 수 (취득 후 기준)</label>
+              <div class="calc-segmented-control" id="taxHouseGroup">
+                <button type="button" class="segment-btn active" data-house="1">1주택 (무주택)</button>
+                <button type="button" class="segment-btn" data-house="2">2주택 (조정)</button>
+                <button type="button" class="segment-btn" data-house="3">3주택 이상</button>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label for="taxAmount" class="calc-label">취득 취득가액 (만원 단위)</label>
+              <div class="calc-input-wrapper">
+                <input type="number" id="taxAmount" class="calc-input" value="250000" step="1000">
+                <span class="calc-unit">만원</span>
+              </div>
+              <small style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; display: block;">잠실 84㎡ 기준 실거래가 산출</small>
+            </div>
+
+            <div class="calc-result-box" style="background:var(--accent-light); border-color:rgba(2,132,199,0.2);">
+              <div class="result-row">
+                <span>적용 총 세율 (교육세·농특세 포함)</span>
+                <span class="result-val" id="taxRateVal">3.50%</span>
+              </div>
+              <div class="result-row">
+                <span>취득세 본세</span>
+                <span class="result-val" id="taxBaseVal">7,500만원</span>
+              </div>
+              <div class="result-row">
+                <span>지방교육세 및 농특세</span>
+                <span class="result-val" id="taxEduVal">1,250만원</span>
+              </div>
+              <div class="result-row total" style="color:var(--accent); border-color:rgba(2,132,199,0.3);">
+                <span>총 납부 예상 세액</span>
+                <span class="result-val" id="taxTotalVal">8,750만원</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DIRECT PHONE CTA & 1:1 CONSULTATION SECTION -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <!-- Big Visual Call Banner -->
+        <div class="cta-banner-card">
+          <div class="cta-banner-content">
+            <span class="cta-banner-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              잠실 전문 15년 신뢰의 파트너십
+            </span>
+            <h2 class="cta-banner-title">
+              잠실 아파트 매매·전세·재건축의 모든 것,<br>
+              지금 바로 전문 공인중개사와 통화하세요
+            </h2>
+            <p class="cta-banner-desc">
+              고객님의 소중한 자산, 정확한 시세 브리핑과 철저한 권리분석으로 안전하게 지켜드립니다.
+            </p>
+
+            <div class="cta-call-actions">
+              <!-- Primary Phone Call -->
+              <a href="tel:02-421-8949" class="btn-cta-phone" onclick="handleCallClick('CTA 메인 전화연결')">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>02-421-8949</span>
+              </a>
+
+              <!-- KakaoTalk CTA -->
+              <a href="https://open.kakao.com" target="_blank" rel="noopener noreferrer" class="btn-cta-kakao" onclick="showToast('카카오톡 1:1 상담 채널로 연결됩니다.')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3C6.477 3 2 6.477 2 10.767c0 2.766 1.874 5.184 4.704 6.544l-1.189 4.359a.62.62 0 0 0 .918.688l5.228-3.46c.112.006.225.012.339.012 5.523 0 10-3.477 10-7.767S17.523 3 12 3z"></path>
+                </svg>
+                <span>카카오톡 1:1 빠른 상담</span>
+              </a>
+            </div>
+            <p class="cta-sub-note">⚡ 모바일에서 터치 시 즉시 전화 통화로 연결됩니다. (연중무휴 09:00 ~ 21:00)</p>
+          </div>
+        </div>
+
+        <!-- 2-Column: 1:1 Consultation Form & Office Map Guide -->
+        <div class="consult-grid" id="office">
+          <!-- Left: 1:1 Consultation Form -->
+          <div class="consult-form-card">
+            <h3 style="font-size:1.4rem; font-weight:800; margin-bottom:8px; color:var(--text-main);">📋 1:1 방문 및 전화 상담 예약</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:24px;">원하시는 관심 단지와 방문 희망일을 남겨주시면 10분 내로 전담 중개사가 연락드립니다.</p>
+
+            <form id="consultationForm">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">고객 성함 *</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="홍길동" required>
+                </div>
+                <div class="form-group">
+                  <label for="clientPhone" class="form-label">연락처 *</label>
+                  <input type="tel" id="clientPhone" class="form-input" placeholder="010-0000-0000" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="clientComplex" class="form-label">관심 단지</label>
+                  <select id="clientComplex" class="form-select">
+                    <option value="잠실엘스">잠실 엘스</option>
+                    <option value="잠실리센츠">잠실 리센츠</option>
+                    <option value="잠실트리지움">잠실 트리지움</option>
+                    <option value="레이크팰리스">잠실 레이크팰리스</option>
+                    <option value="잠실파크리오">잠실 파크리오</option>
+                    <option value="잠실래미안아이파크">잠실 래미안 아이파크 (신축)</option>
+                    <option value="잠실르엘">잠실 르엘 (신축)</option>
+                    <option value="잠실주공5단지">잠실주공5단지 (재건축)</option>
+                    <option value="기타상담">기타 부동산 상담</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="clientInquiryType" class="form-label">상담 유형</label>
+                  <select id="clientInquiryType" class="form-select">
+                    <option value="매수문의">매수 (실거주/투자)</option>
+                    <option value="매도의뢰">매도 (매물 접수)</option>
+                    <option value="전월세임대차">전세 / 월세 임대차</option>
+                    <option value="재건축입주권">재건축 입주권 상담</option>
+                    <option value="세무대출">토지거래허가 / 세무 가이드</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientMemo" class="form-label">문의 내용 및 희망 상담 시간</label>
+                <textarea id="clientMemo" class="form-textarea" placeholder="문의하실 세부 사항이나 통화 가능하신 시간대를 남겨주세요."></textarea>
+              </div>
+
+              <button type="submit" class="btn-form-submit">
+                상담 예약 신청하기
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Office Info & Map -->
+          <div class="office-info-card">
+            <h3 style="font-size:1.4rem; font-weight:800; margin-bottom:8px; color:var(--text-main);">📍 찾아오시는 길</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:20px;">언제든 편안하게 방문해 따뜻한 차 한 잔과 함께 브리핑을 받아보세요.</p>
+
+            <div class="office-map-preview">
+              <img src="assets/images/hero.jpg" alt="잠실 센트럴 프라임 공인중개사 위치">
+              <div class="map-pin-overlay">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#0f766e" stroke="#ffffff" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>잠실새내역 5번 출구 앞</span>
+              </div>
+            </div>
+
+            <div class="office-details-list">
+              <div class="office-detail-item">
+                <div class="office-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <strong>위치:</strong> 서울특별시 송파구 올림픽로 119 (잠실동)
+                  <div style="font-size:0.82rem; color:var(--text-muted);">2호선 잠실새내역 5번 출구 도보 1분 (상가 1층)</div>
+                </div>
+              </div>
+              <div class="office-detail-item">
+                <div class="office-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <strong>영업시간:</strong> 월~토 09:30 ~ 20:00 (일요일 사전예약제)
+                </div>
+              </div>
+              <div class="office-detail-item">
+                <div class="office-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                </div>
+                <div>
+                  <strong>주차안내:</strong> 건물 지하 전용 주차장 2시간 무료 주차 가능
+                </div>
+              </div>
+            </div>
+
+            <div class="office-actions">
+              <a href="https://map.naver.com" target="_blank" rel="noopener noreferrer" class="btn-map-link" onclick="showToast('네이버 지도 길찾기로 이동합니다.')">
+                🗺️ 네이버 지도
+              </a>
+              <a href="https://map.kakao.com" target="_blank" rel="noopener noreferrer" class="btn-map-link" onclick="showToast('카카오맵 길찾기로 이동합니다.')">
+                🗺️ 카카오맵
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <h4>잠실 센트럴 프라임 공인중개사사무소</h4>
+          <p>
+            대표 공인중개사: 박준혁 | 개설등록번호: 제11710-2015-00124호<br>
+            사업자등록번호: 215-14-89490 | 한국공인중개사협회 손해배상책임보증 2억원 가입<br>
+            주소: 서울특별시 송파구 올림픽로 119, 1층 (잠실동) | 전화: 02-421-8949
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>단지별 바로가기</h5>
+          <ul class="footer-links">
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=els]').click()">잠실 엘스 (ELS)</a></li>
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=ricenz]').click()">잠실 리센츠 (RICENZ)</a></li>
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=trizium]').click()">잠실 트리지움 (TRIZIUM)</a></li>
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=lake]').click()">잠실 레이크팰리스</a></li>
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=parkrio]').click()">잠실 파크리오</a></li>
+            <li><a href="#complexes" onclick="document.querySelector('[data-category=reconstruct]').click()">잠실 래미안아이파크 / 르엘</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>고객 지원 & 상담</h5>
+          <ul class="footer-links">
+            <li><a href="tel:02-421-8949">대표전화: 02-421-8949</a></li>
+            <li><a href="tel:010-8949-5500">직통전화: 010-8949-5500</a></li>
+            <li><a href="#news">부동산 소식 & 뉴스룸</a></li>
+            <li><a href="#calculators">중개보수 및 취득세 계산기</a></li>
+            <li><a href="#contact">1:1 방문 상담 신청</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>© 2026 Jamsil Central Prime Realty. All Rights Reserved.</p>
+        <p style="color:#64748b;">본 사이트에 게재된 매물 정보 및 시세 분석은 실시간 시장 상황에 따라 변동될 수 있습니다.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 9. MOBILE STICKY BOTTOM ACTION BAR (<768px) -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:02-421-8949" class="mob-cta-btn call" onclick="handleCallClick('모바일 하단 고정 전화')">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>전화 상담</span>
+    </a>
+    <a href="https://open.kakao.com" target="_blank" rel="noopener noreferrer" class="mob-cta-btn kakao" onclick="showToast('카카오톡 채널로 연결됩니다.')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.477 3 2 6.477 2 10.767c0 2.766 1.874 5.184 4.704 6.544l-1.189 4.359a.62.62 0 0 0 .918.688l5.228-3.46c.112.006.225.012.339.012 5.523 0 10-3.477 10-7.767S17.523 3 12 3z"></path></svg>
+      <span>카카오톡</span>
+    </a>
+    <a href="#contact" class="mob-cta-btn inquiry">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+      <span>상담예약</span>
+    </a>
+  </div>
+
+  <!-- 10. MODALS (PROPERTY & ARTICLE) -->
+  <!-- Property Detail Modal -->
+  <div class="modal-backdrop" id="propertyModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal('propertyModal')" aria-label="창 닫기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="propertyModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Article Reader Modal -->
+  <div class="modal-backdrop" id="articleModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal('articleModal')" aria-label="창 닫기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="articleModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification"></div>
+
+  <!-- Scripts -->
+  <script src="js/properties-data.js"></script>
+  <script src="js/news-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
